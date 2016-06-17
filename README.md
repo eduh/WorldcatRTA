@@ -33,6 +33,6 @@ Define in corresponding server section
 
 -RestlerLocation (a tiny framework to take care of the Rest. Version 2 of https://github.com/Luracast/Restler  included in the package)
 
-Several item status codes aplly to your own environment. The values are the ones we use at Utrecht  University.
+Several item status codes should be altered to your own environment. The values are the ones we use at Utrecht  University.
 
 
