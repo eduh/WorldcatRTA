@@ -15,10 +15,11 @@ Unzip the package to your desired weblocation
 
 In config.php
 
-Define in [servers] the machines that will act as dev\test. It must match php_uname('n')
+Define in [servers] the machines that will act as dev\test. It must match php_uname('n'). If nothing matches your machine it will default to the [production] section.
 
 
-Define in corresponding section
+
+Define in corresponding server section
 
 -Log (defaults to /tmp)
 
