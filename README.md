@@ -6,10 +6,15 @@ The service expects a OCN number from a WorldCat title as start identifier. The 
 To make this work you need several things
 
 -A PHP with CURL website where the endpoint lives. HTTPS is highly recommended
+
 -Make sure your mod_rewrite is working
+
 -A writable directory for logging. Default configuration is /tmp/
+
 -Access to your Aleph Xservices from your endpoint the portal-x credentials)
+
 -Someone who can configure your Worldcat instance to consume the REST service
+
 
 # Install
 Unzip the package to your desired weblocation
