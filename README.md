@@ -17,9 +17,11 @@ In config.php
 
 Define in [servers] the machines that will act as dev\test. It must match php_uname('n')
 
+
 Define in corresponding section
 
 -Log (defaults to /tmp)
+
 -ApiKeys (a comma delimited set of apikeys.)
 
 -ItemsServer (aleph server)
