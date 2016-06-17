@@ -23,7 +23,7 @@ Define in corresponding server section
 
 -Log (defaults to /tmp)
 
--ApiKeys (a comma delimited set of apikeys.)
+-ApiKeys (a comma delimited set of apikeys. Api keys are plaintext strings you can define yourself. It is not a foolproof access mechanism but will do for most organisations)
 
 -ItemsServer (aleph server)
 
