@@ -14,6 +14,7 @@ To make this work you need several things
 Unzip the package to your desired weblocation
 
 In config.php
+
 Define in [servers] the machines that will act as dev\test. It must match php_uname('n')
 
 Define in corresponding section
