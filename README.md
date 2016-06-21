@@ -1,6 +1,6 @@
 # WorldcatRTA
 A REST facade between Aleph and Worldcat.
-This REST\PHP  based facade delivers real time availability from a Aleph system to Worldcat OCLC.
+This REST\PHP  based facade delivers real time availability (RTA) from a Aleph system to Worldcat OCLC.
 The service expects a OCN number from a WorldCat title as start identifier. The service tries to resolve this to an Aleph systemnumber and will provide the availability of the items.
 
 ![alt tag](rta.png)
