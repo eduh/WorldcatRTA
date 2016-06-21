@@ -3,6 +3,8 @@ A REST facade between Aleph and Worldcat.
 This REST\PHP  based facade delivers real time availability from a Aleph system to Worldcat OCLC.
 The service expects a OCN number from a WorldCat title as start identifier. The service tries to resolve this to an Aleph systemnumber and will provide the availability of the items.
 
+![alt tag](rta.png)
+
 To make this work you need several things
 * A PHP with CURL website where the endpoint lives. HTTPS is highly recommended
 * Make sure your mod_rewrite is working
@@ -32,7 +34,7 @@ Set the credentials to your Aleph Xserver
 It is best to store the plaintext Xserver credentials outside of your http webroot or application directory. Create an empty file at the location you specified in the config entry `XserverCred`.  In the first line put the Xserver user. In the second put your password.
 
 #Basic Usage
-From your appdir make the call 
+From your appdir make the call and prepend https://[yourhost]/[your location]
 
 /rtaservice/rta/[a valid ocn]/[your api key]/ocn/html
 
