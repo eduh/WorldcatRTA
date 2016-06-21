@@ -5,6 +5,8 @@ The service expects a OCN number from a WorldCat title as start identifier. The 
 
 ![alt tag](rta.png)
 
+![alt tag](avail.png)
+
 To make this work you need several things
 * A PHP with CURL website where the endpoint lives. HTTPS is highly recommended
 * Make sure your mod_rewrite is working
