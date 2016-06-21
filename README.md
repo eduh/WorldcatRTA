@@ -9,6 +9,7 @@ To make this work you need several things
 * A writable directory for logging. Default configuration is /tmp/
 * Access to your Aleph Xservices from your endpoint the portal-x credentials)
 * Someone who can configure your Worldcat instance to consume the REST service
+* In Aleph make sure there is an index on the oclc (ocn) number. The Xserver must be able to resolve something like /X?op=find&code=oclc&request=[ocn number]&base=[your base]
 
 
 # Install
