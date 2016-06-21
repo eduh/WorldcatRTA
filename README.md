@@ -14,20 +14,32 @@ To make this work you need several things
 # Install
 Unzip the package to your desired weblocation
 
-In config.php
+#Configure
+In config.php:
+Define in [servers] section the machines that will act as dev\test. It must match your php_uname('n'). If nothing matches your machinename it will default to the [production] section.
 
-Define in [servers] the machines that will act as dev\test. It must match php_uname('n'). If nothing matches your machine it will default to the [production] section.
-
-
-
-Define in corresponding server section
-
+Define some configs in corresponding server section
 * Log (defaults to /tmp)
-* ApiKeys (a comma delimited set of apikeys. Api keys are plaintext strings you can define yourself. It is not a foolproof access mechanism but will do for most organisations)
-* ItemsServer (aleph server)
-* Xserver (aleph x server)
-* XserverCred (This is a pointer to a file. The file itself contains two line. First line is Xuser, Second line is the password. Make sure this file is outside your webroot!)
+* ApiKeys (a comma delimited set of apikeys. Api keys are plaintext strings you define yourself. It is not a foolproof access mechanism but will do for most organisations)
+* ItemsServer (your aleph server)
+* Xserver (your aleph x server. Make sure your sysadmin configures Xserver access for your RTA machine)
+* XserverCred (This is a pointer to a file. The file itself must contain two lines. First line is Xuser, second line is the password. Make sure this file is outside your application or httpd webroot! Also make sure the file can be read by the httpd webserver account)
 * RestlerLocation (a tiny framework to take care of the Rest. Version 2 of https://github.com/Luracast/Restler  included in the package)
 * Several item status codes should be altered to your own environment. The values are the ones we use at Utrecht  University.
+
+Set the credentials to your Aleph Xserver
+It is best to store the plaintext Xserver credentials outside of your http webroot or application directory. Create an empty file at the location you specified in the config entry `XserverCred`.  In the first line put the Xserver user. In the second put your password.
+
+Usage
+From your appdir make the call 
+/rtaservice/rta/[a valid ocn]/[your api key]/ocn/html
+/rtaservice/rta/[a valid ocn]/[your api key]/ocn/xml
+/rtaservice/rta/[a valid ocn]/[your api key]/ocn (defaults to html output)
+Review the logfile as defined in the config to check if all is well. Check for 'ERR' to detect if errors occur.
+
+
+
+
+
 
 
