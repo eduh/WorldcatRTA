@@ -31,9 +31,13 @@ It is best to store the plaintext Xserver credentials outside of your http webro
 
 #Basic Usage
 From your appdir make the call 
+
 /rtaservice/rta/[a valid ocn]/[your api key]/ocn/html
+
 /rtaservice/rta/[a valid ocn]/[your api key]/ocn/xml
+
 /rtaservice/rta/[a valid ocn]/[your api key]/ocn (defaults to html output)
+
 Review the logfile as defined in the config to check if all is well. Check for 'ERR' to detect if errors occur.
 
 
