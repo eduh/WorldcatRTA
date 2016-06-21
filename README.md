@@ -21,6 +21,7 @@ In config.php: define in [servers] section the machines that will act as dev\tes
 Define some configs in corresponding test\dev\production server section
 * Log (defaults to /tmp and make sure it is writable for the httpd webserver account))
 * ApiKeys (a comma delimited set of apikeys. Api keys are plaintext strings you define yourself. It is not a foolproof access mechanism but will do for most organisations)
+* Define your Aleph bibliographic library in AlephDocLib
 * ItemsServer (your aleph server)
 * Xserver (your aleph x server. Make sure your sysadmin configures Xserver access for your RTA machine)
 * XserverCred (This is a pointer to a file. The file itself must contain two lines. First line is Xuser, second line is the password. Make sure this file is outside your application or httpd webroot! Also make sure the file can be read by the httpd webserver account)
