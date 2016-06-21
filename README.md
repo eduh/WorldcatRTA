@@ -15,11 +15,10 @@ To make this work you need several things
 Unzip the package to your desired weblocation
 
 #Configure
-In config.php:
-Define in [servers] section the machines that will act as dev\test. It must match your php_uname('n'). If nothing matches your machinename it will default to the [production] section.
+In config.php: define in [servers] section the machines that will act as dev\test. It must match your php_uname('n'). If nothing matches your machinename it will default to the [production] section.
 
-Define some configs in corresponding server section
-* Log (defaults to /tmp)
+Define some configs in corresponding test\dev\production server section
+* Log (defaults to /tmp and make sure it is writable for the httpd webserver account))
 * ApiKeys (a comma delimited set of apikeys. Api keys are plaintext strings you define yourself. It is not a foolproof access mechanism but will do for most organisations)
 * ItemsServer (your aleph server)
 * Xserver (your aleph x server. Make sure your sysadmin configures Xserver access for your RTA machine)
@@ -30,7 +29,7 @@ Define some configs in corresponding server section
 Set the credentials to your Aleph Xserver
 It is best to store the plaintext Xserver credentials outside of your http webroot or application directory. Create an empty file at the location you specified in the config entry `XserverCred`.  In the first line put the Xserver user. In the second put your password.
 
-Usage
+#Basic Usage
 From your appdir make the call 
 /rtaservice/rta/[a valid ocn]/[your api key]/ocn/html
 /rtaservice/rta/[a valid ocn]/[your api key]/ocn/xml
