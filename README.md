@@ -30,7 +30,7 @@ Define some configs in corresponding test\dev\production server section
 * Xserver (your aleph x server. Make sure your sysadmin configures Xserver access for your RTA machine)
 * XserverCred (This is a pointer to a file. The file itself must contain two lines. First line is Xuser, second line is the password. Make sure this file is outside your application or httpd webroot! Also make sure the file can be read by the httpd webserver account)
 * RestlerLocation (a tiny framework to take care of the Rest. Version 2 of https://github.com/Luracast/Restler  included in the package)
-* Several item status codes should be altered to your own environment. The values are the ones we use at Utrecht  University.
+* Several item status codes should be altered to your own environment and logic. The values are the ones we use at Utrecht  University.
 
 Set the credentials to your Aleph Xserver
 It is best to store the plaintext Xserver credentials outside of your http webroot or application directory. Create an empty file at the location you specified in the config entry `XserverCred`.  In the first line put the Xserver user. In the second put your password.
