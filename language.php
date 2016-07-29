@@ -1,0 +1,42 @@
+<?php
+$arrEN = array (
+        '0' => 'Unknown',
+        '1' => 'Available',
+        '2' => 'Available - for reference only',
+        '3' => 'On loan',
+        '4' => 'Not yet available',
+        '5' => 'Missing',
+        '6' => 'Not yet available',
+        '99' => 'Too many items',
+        'RTALinkText' =>'Go to item(s)',
+        'unknown' =>'Unknown',
+        'UL Depot Noord' =>'In closed stacks',
+        'UL Depot Zuid' =>'In closed stacks',
+        'UL City Centre' =>'UL City Centre', 
+        'UL General Collection' =>'UL Uithof',
+        'UL Uithof' =>                      	'UL Uithof',
+        'UL Special Coll. Reading Room' =>  	'UL Uithof',
+        'UL Science' =>                     	'UL Uithof',
+        'UL Medicine' =>                    	'UL Uithof',
+        'UL Social & Geosciences' =>        	'UL Uithof',
+        'UL Testing Materials Library' =>   	'UL Uithof',
+        'UL Theology' =>                    	'UL Uithof',
+        'UL City Centre' =>                 	'UL City Centre',       
+        'UL City Centre' =>                 	'UL City Centre',
+        'UB ILL' =>                         	'UL Uithof',
+        'UBNET' =>'-',                          	
+        'UMC' =>'-' ,                           	
+        'University for Humanistics' =>'-',     	
+        'Veterinary Science' =>'-',             	
+        'Mathematics Library' =>'-',            	
+        'UL Conversie' =>'-',                   	
+        'University Museum Library' =>'-',      	
+        'FSB' =>'-',                            	
+        'Systematic Botany Library' =>'-',      	
+        'Physics and Astronomy' =>'-',          	
+        'invalid_apikey'      => 'Not a valid request',
+        );
+
+//We only use english for now so this array is empty
+$arrNL = array (
+);

@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+        <response/>
+<!--
+<item-data>
+<item>
+<rec-key>Unknown</rec-key>
+<barcode>Unknown</barcode>
+<sub-library>Unknown</sub-library>
+<collection>Unknown</collection>
+<item-status>Unknown</item-status>
+<call-no-1>UnknownNotFound</call-no-1>
+<description>Unknown</description>
+<chronological-i>Unknown</chronological-i>
+<library>UBU50</library>
+<on-hold>Unknown</on-hold>
+<requested>Unknown</requested>
+<expected>Unknown</expected>
+<loan-status>0</loan-status>
+<loan-in-transit>N</loan-in-transit>
+<loan-due-date>0</loan-due-date>
+<loan-due-hour>0</loan-due-hour>
+<rtaalephsys>0</rtaalephsys>
+<rtaalephlink>
+    -
+</rtaalephlink>
+<rtalocation>Unknown</rtalocation>
+<rtaitemstatus>0</rtaitemstatus>
+<rtashelfmark>Unknown</rtashelfmark>
+<rtanote>Item not found</rtanote>
+</item>
+</item-data>
+        -->
