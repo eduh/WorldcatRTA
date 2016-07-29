@@ -12,7 +12,7 @@ To make this work you need several things
 * Make sure your mod_rewrite is working
 * A writable directory for logging. Default configuration is /tmp/
 * Access to your Aleph Xservices from your endpoint (you will need something like the Aleph portal-x credentials)
-* Someone in charge who can configure your Worldcat instance to consume the REST service
+* Someone in charge who can configure your Worldcat instance to consume the REST service. WorldCat tries to `screenscrape`the html output rather then consume the xml or json format.
 * In Aleph make sure there is an index on the oclc (ocn) number. The Xserver must be able to resolve something like /X?op=find&code=oclc&request=[ocn number]&base=[your base]
 
 
